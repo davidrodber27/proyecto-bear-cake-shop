@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bear Cake Shop</title>
-    <link rel="stylesheet" href="css/estilos.css">
     <link rel="shortcut icon" href="imagenes/logo-bear.jpg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
@@ -36,7 +36,7 @@
         </div>
         <div class="section-uno-b">
             <div class="imagen-seccion-uno">
-            <img src="/imagenes/tartaleta-cereza.jpg" alt="tartaleta" class="imagen-seccion-tartaleta">
+            <img src="imagenes/tartaleta-frutas-choco-velvet.jpg" alt="tartaleta" class="imagen-seccion-tartaleta">
             </div>
         </div>
     </section>
@@ -48,18 +48,100 @@
         <p class="empresa-p">Llenamos tu vida de sabor y dulzura con productos frescos hechos con amor y excelente calidad.</p>
     </section>
 
-    <section>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-    </section>
+    
+   
+      <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <!-- <h1 class="center-align titulo-carousel"> ¿Qué se te antoja hoy?</h1> -->
 
-    <footer>
-        <p>
-            Atrevete a ser diferente y resalta tu personalidad</p>
-    </footer>
+                <div class="carousel center-align">
+                    <div class="carousel-item">
+                        <h2 class="subtitulo-carousel">Tortas</h2>
+                        <img src="imagenes/torta-red-velvet.jpg" alt="">
+                    </div>
+
+                    <div class="carousel-item">
+                        <h2 class="subtitulo-carousel">Tartaletas</h2>
+                        <img src="imagenes/tartaleta-de-limon.jpg" width="400" alt="">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <h2 class="subtitulo-carousel">Panes</h2>
+                        <img src="imagenes/pan-babka.jpg" width="400" alt="">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <h2 class="subtitulo-carousel">Postres</h2>
+                        <img src="imagenes/tarritos-de-limon.jpg" width="400" alt="">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <h2 class="subtitulo-carousel">Galletas</h2>
+                        <img src="imagenes/afajores.jpg" width="400" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+      </div>
+
+    <section class="domicilios">
+
+      <div class="caja1-domicilios">
+        <img class="imagen-domicilios"  src="imagenes/Icono instrucciones.png" alt="">
+        <h3 class="titulo-domicilios">Instrucciones para tu pedido</h3>
+       <p class="parrafo-domicilios">Una vez elijas el producto, el sabor y relleno que más te guste, debes indicarnos con cuántas personas lo compartirás, nos proporcionas tus datos de domicilio para la entrega y lo podrás disfrutar en la comodidad de tu hogar o con tus personas favoritas.
+      </p>
+      </div>
+      
+      <div class="caja2-domicilios">
+        <img class="imagen-domicilios"  src="imagenes/Icono Tiempos.png" alt="">
+        <h3 class="titulo-domicilios">Tiempos de entrega</h3>
+        <p class="parrafo-domicilios">Durante nuestras preparaciones utilizamos ingredientes frescos, por eso es muy importante reservar tu pedido con 3 días de anticipación.
+        </p>
+      </div>
+      
+      <div class="caja3-domicilios">
+        <img class="imagen-domicilios" src="imagenes/Icono zonas.png" alt="">
+        <h3 class="titulo-domicilios">Zonas de cobertura</h3>
+        <p class="parrafo-domicilios">Estamos ubicados en la ciudad de Bogotá cerca al portal de la 80, hacemos entregas de pedidos en Usaquén hasta la Calle 180, Suba hasta Av. Boyacá con Calle 170, Barrios Unidos, Chapinero, Teusaquillo, Engativá, Santa Fe hasta Calle 19 con Carrera 3ª. (Para otras zonas se cobra un recargo adicional o lo que cueste el domicilio de una empresa de transporte)
+        </p>
+     </div>
+
+    </section>
+    
+    <footer class="creditos">
+
+      <div class="footer-logo">
+          <div class="contenedor-img-footer">
+            <img class="img-footer" src="imagenes/logo bear2.png" alt="logo">
+          </div>
+      </div>
+      <div class="footer-email">
+         <h4>ESCRIBENOS</h4>
+         <form action="">
+          <input id="footer-email-index" class="in-email" type="text" placeholder="Ingresa tu Email.">
+          <button class="button-email" type="EmpiezaA">Enviar</button>
+         
+         </form>
+       </div>
+      <div class="footer-redes">
+       <h4>SIGUENOS EN:</h4>
+      </div>
+      <div class="footer-compañia">
+       <h4>EMPRESA</h4>
+      </div>
+      <div class="footer-contacto">
+       <h4>CONTACTO</h4>
+      </div>
+     
+   </footer>
+ 
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </body>
 </html>
