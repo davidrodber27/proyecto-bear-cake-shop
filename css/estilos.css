@@ -159,6 +159,7 @@ header {
      padding-top:20px;
      font-family: 'Roboto Slab', serif;
      color: #C7D7C6;
+     border: 1px solid #bf743c;
  }
 
 .titulo-galletas {
@@ -169,7 +170,6 @@ header {
     
 }
 .descripcion-galletas {
-    font-family: 'Roboto Slab', serif;
     font-size: 0.9rem; 
     text-align: center; 
     padding: 10px;
@@ -178,7 +178,7 @@ header {
 }
 .precio-galletas {
     text-align: center; 
-    font-family: 'Roboto Slab', serif;
+    
   
 }
  .foto-galletas {
@@ -216,7 +216,6 @@ header {
 .boton-comprar-galletas{
     height: 40px;
     width: 120px;
-    font-family: 'Roboto Slab', serif;  
     color:  #412611;
     cursor: pointer;  
 }
@@ -264,6 +263,148 @@ header {
     grid-area: producto4;
     justify-self: start;
 }
+
+/* ------------------------- */
+/* pagina postres con sus respectivos productos trabajado con grid */
+/* ------------------------- */
+
+.postres-productos {
+    margin-top:140px; 
+    display: grid;
+    height: 1800px;
+    margin-left: 80px;
+    margin-right: 80px;
+    grid-template-areas: 
+    "titulo-postres titulo-postres titulo-postres titulo-postres"
+    "foto-postres foto-postres postre1 postre2"
+    "foto-postres foto-postres postre3 postre4"
+    "postre5 postre6 postre7 none";
+   grid-template-columns: 18% 18% 28% 28%;
+   grid-template-rows: 100px 504px 504px 504px;
+   grid-column-gap: 20px;
+   grid-row-gap: 20px;
+   justify-content: center;
+   
+  
+}
+
+.titulo-postres{
+    grid-area: titulo-postres;
+    background-color:#516555;
+    text-align: center;
+    font-size: 2rem;
+    padding-top:20px;
+    font-family: 'Roboto Slab', serif;
+    color: #C7D7C6;
+    border: 1px solid #bf743c; 
+}
+
+.titulo-principal-postres {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem; 
+    text-align: center; 
+    color: #412611;
+    
+}
+.descripcion-postres {
+    font-size: 0.9rem; 
+    text-align: center; 
+    padding: 10px;
+    color: #412611;
+    
+}
+.precio-postres {
+    text-align: center; 
+    
+  
+}
+ .foto-postres {
+    grid-area: foto-postres;
+    align-self: center;
+    justify-self: center;
+    
+ }
+
+.img-postres-principal {
+     max-width: 100%;
+     display: block;
+     margin: auto;
+     border-radius: 10%;
+     box-shadow: 0px 1px 15px;
+      
+}
+.img-postres {
+    width: 90%; 
+    padding: 15px; 
+}
+ 
+.postres-general {
+    height: 500px;
+    width: 300px;
+    border: 1px solid #412611;
+    overflow: hidden;
+    border-radius: 3%;
+    box-shadow: 0px 1px 15px;
+    transition: all 400ms ease;
+     
+}
+.postres-general:hover {
+    transform: translatey(-3%);
+  }
+
+.boton-comprar-postres{
+    height: 40px;
+    width: 120px;
+    color:  #412611;
+    cursor: pointer;  
+}
+   
+
+
+ .postre1 {
+     grid-area: postre1;
+     justify-self: center;
+    
+ }
+ 
+ 
+ .postre2 {
+    grid-area: postre2;
+    justify-self: start;
+    
+}
+
+.postre3 {
+    grid-area: postre3;
+    justify-self: center;
+    
+}
+
+.postre4 {
+    grid-area: postre4;
+    justify-self: start;
+    
+}
+
+.postre5 {
+    grid-area: postre5;
+    justify-self: center;
+    
+}
+
+.postre6 {
+    grid-area: postre6;
+    justify-self: center;
+    
+}
+
+.postre7 {
+    grid-area: postre7;
+    justify-self: center;
+    
+    
+}
+
 
 /* ------------------------- */
 /* footer de todas las paginas de la empresa */
