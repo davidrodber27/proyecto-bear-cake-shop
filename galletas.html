@@ -7,13 +7,14 @@
     <title>Bear Cake Shop</title>
     <link rel="shortcut icon" href="imagenes/logo-bear.jpg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
     <header>
         <div class="header-img">
-            <a href="index.html"><img src="imagenes/logo-bear.jpg" alt="Logo" class="img-menu" ></a>
+            <a href="index.html"><img src="imagenes/logo bear2.png" alt="Logo" class="img-menu" ></a>
         </div>
          
         <div class="header-lista">
@@ -29,7 +30,7 @@
     
     <section class="galletas-productos">
 
-        <div class="titulo">
+        <div class="titulo-galletas-principal">
          <h2 class="titulo-principal">Galletas</h2>
         </div>
 
@@ -40,7 +41,7 @@
         <div class="producto1">
           <div class="galletas-general">
             <img src="imagenes/galletas-queso-crema.jpg" alt="galletas de queso" class="img-galletas"> 
-            <h3 class="titulo-galletas">GALLETAS DE QUESO CREMA</h3>
+            <h3 class="titulo-galletas">Galletas De queso Crema</h3>
             <p class="descripcion-galletas">Rica galleta con un sutil sabor a queso que se deshace en tu boca, saboreando también lo dulce del azúcar que decora esta galleta, perfecta para una tarde de té.</p>
             <p class="precio-galletas">$30.200-$40.200</p>
             <button class="boton-comprar-galletas" id="boton-queso-crema"> Compra Ahora </button>
@@ -50,7 +51,7 @@
         <div class="producto2">
          <div class="galletas-general">
              <img class="img-galletas" src="imagenes/afajores.jpg" alt="galletas alfajor">
-             <h3 class="titulo-galletas">ALFAJORES</h3>
+             <h3 class="titulo-galletas">Alfajores</h3>
              <p class="descripcion-galletas">Receta tradicional argentina, masa a base de maicena con un delicioso relleno de arequipe para compartir con familia o amigos.</p>
              <p class="precio-galletas">$30.200-$40.200</p>
              <button class="boton-comprar-galletas" id="boton-alfajor"> Compra Ahora </button>
@@ -60,7 +61,7 @@
         <div class="producto3">
             <div class="galletas-general">
                 <img class="img-galletas" src="imagenes/galleta-chipis.grande.jpeg" alt="galletas chips">
-                <h3 class="titulo-galletas">GALLETAS CHIPS DE CHOCOLATE</h3>
+                <h3 class="titulo-galletas">Galletas Chips De Chocolate</h3>
                 <p class="descripcion-galletas">Rica galleta suave y con un gran sabor a vainilla y chocolate. Sabores: Vainilla, chocolate y red velvet.</p>
                 <p class="precio-galletas">$30.200-$40.200</p>
                 <button class="boton-comprar-galletas" id="boton-chips"> Compra Ahora </button>
@@ -70,7 +71,7 @@
         <div class="producto4">
             <div class="galletas-general"> 
                 <img class="img-galletas" src="imagenes/galletas-man-grande.jpeg" alt="galletas mantequilla">
-                <h3 class="titulo-galletas">GALLETAS DE MANTEQUILLA</h3>
+                <h3 class="titulo-galletas">Galletas de Mantequilla</h3>
                 <p class="descripcion-galletas">Suaves y crujientes galletas para obsequiar en fechas especiales a tu persona favorita</p>
                 <p class="precio-galletas">$30.200-$40.200</p>
                 <button class="boton-comprar-galletas"id="boton-mantequilla"> Compra Ahora </button>
@@ -78,30 +79,43 @@
         </div>
     </section>
 
-<footer class="creditos">
+    <footer class="creditos">
 
-   <div class="footer-logo">
-       <div class="contenedor-img-footer">
-         <img class="img-footer" src="imagenes/logo bear2.png" alt="logo">
-       </div>
-   </div>
-   <div class="footer-email">
-      <h4>ESCRIBENOS</h4>
-      <form action="">
-         <input class="in-email" type="text" placeholder="Ingresa tu Email.">
-         <button class="button-email" type="EmpiezaA">Enviar</button>
-      </form>
-    </div>
-   <div class="footer-redes">
-    <h4>SIGUENOS EN:</h4>
-   </div>
-   <div class="footer-compañia">
-    <h4>EMPRESA</h4>
-   </div>
-   <div class="footer-contacto">
-    <h4>CONTACTO</h4>
-   </div>
-  
-</footer>
+        <div class="footer-logo">
+            <div class="contenedor-img-footer">
+              <img class="img-footer" src="imagenes/logo bear2.png" alt="logo">
+            </div>
+        </div>
+        <div class="footer-email">
+           <h4>ESCRIBENOS</h4>
+           <form action="">
+            <input id="footer-email-index" class="in-email" type="text" placeholder="Ingresa tu Email.">
+            <button class="button-email" type="EmpiezaA">Enviar</button>
+           
+           </form>
+         </div>
+        <div class="footer-redes">
+           <h4>SIGUENOS EN:</h4>
+      
+           <div class="sm">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+             
+            </div>
+        </div>
+
+       <div class="footer-compañia">
+       <h4>EMPRESA:</h4>
+       <p class="descripcion-empresa-productos">Somos una empresa Colombiana dedicada a la produccion de reposteria y pasteleria, ubicada en la ciudad de Bogotá cerca al portal de la 80. </p>
+      </div>
+      <div class="footer-contacto">
+       <h4>CONTACTO:</h4>
+       <p class="datos-contacto-productos">bearcakeshop@gmail.com</p>
+       <p class="datos-contacto-productos">Telefono: 313-8130497</p>
+      </div>
+       
+     </footer>
 </body>
 </html>
