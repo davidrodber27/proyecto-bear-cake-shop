@@ -1,0 +1,48 @@
+body {
+    background-color: #F8F3EA;
+ 
+}
+
+@media (min-width: 1080px) and (max-width: 1460px) {
+       body {
+        background-color: #046596;
+}
+}
+
+@media (min-width: 840px) and (max-width: 1079px) {
+    body {
+     background-color: #b268a4;
+}
+}
+
+header {
+    background-color: #E7D2C1;
+    display:flex;
+    height:130px;
+    position:fixed;
+    top: 10px;
+    width:100%; 
+    border: 1px solid #bf743c; 
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top:30px;
+    font-family: 'Roboto Slab', serif;
+}
+
+h4 {
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif; 
+    padding-top: 60px; 
+    padding-left: 50px;
+    color: rgb(248, 243, 233);
+}
+
+@media (max-width: 1024px){
+    h4 {
+        font-size: 1.5rem;
+    }
+}
+

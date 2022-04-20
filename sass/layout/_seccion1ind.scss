@@ -1,0 +1,74 @@
+.sectionuno {
+    margin:auto;
+    margin-top:200px;
+    display: flex;
+    width: 80%;
+    align-items: center;
+
+    .section-uno-a {
+        width: 50%;
+        height:auto;
+        font-family: 'Roboto Slab', serif; 
+        padding-right: 10px;
+         
+        .parrafo-uno {
+            padding-top: 20px;
+            padding-left: 100px;
+            font-size: 3rem;
+            color: #935F3C;
+        }
+
+        @media (min-width: 1080px) and (max-width: 1460px){
+            .parrafo-uno {
+              font-size: 1.7rem;
+              padding-top: 100px;
+            } 
+        }
+
+        @media (min-width: 840px) and (max-width: 1079px) {
+            .parrafo-uno {
+              font-size: 1.5rem;
+              padding-top: 150px;
+        }
+        }
+
+        .boton-uno {
+            margin: 80px; 
+            margin-left: 100px;
+            font-size: 1.2rem;
+            width:250px;
+            height:70px;
+            cursor:pointer;
+            border:groove #935F3C;
+            background-color:  #F8F3EA;   
+            color: #516555;
+            font-family: 'Roboto Slab', serif;
+
+            &:hover{
+            background-color: #C7D7C6;
+            }
+        }
+
+        @media (min-width: 840px) and (max-width: 1079px) {
+            .boton-uno {
+                width:200px;
+                height:50px;
+        }
+        }    
+    }
+
+
+
+
+    .section-uno-b {
+        width: 50%;
+        height: auto;
+
+        .imagen-seccion-tartaleta{
+            margin: auto;
+            display: block;
+            max-width: 100%;
+            height: auto;
+        } 
+    }
+}

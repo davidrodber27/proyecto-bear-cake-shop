@@ -1,0 +1,995 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: #F8F3EA; }
+
+@media (min-width: 1080px) and (max-width: 1460px) {
+  body {
+    background-color: #046596; } }
+
+@media (min-width: 840px) and (max-width: 1079px) {
+  body {
+    background-color: #b268a4; } }
+
+header {
+  background-color: #E7D2C1;
+  display: flex;
+  height: 130px;
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  border: 1px solid #bf743c; }
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 30px;
+  font-family: 'Roboto Slab', serif; }
+
+h4 {
+  font-size: 2rem;
+  font-family: 'Roboto Slab', serif;
+  padding-top: 60px;
+  padding-left: 50px;
+  color: #f8f3e9; }
+
+@media (max-width: 1024px) {
+  h4 {
+    font-size: 1.5rem; } }
+
+.header-img {
+  width: auto;
+  height: auto; }
+  .header-img .img-menu {
+    max-width: 100%;
+    height: 110px;
+    display: block;
+    padding-left: 20px;
+    margin-top: 10px; }
+  @media (min-width: 1080px) and (max-width: 1460px) {
+    .header-img .img-menu {
+      padding-left: 40px; } }
+  @media (min-width: 840px) and (max-width: 1079px) {
+    .header-img .img-menu {
+      max-width: 70%; } }
+
+@media (min-width: 840px) and (max-width: 1079px) {
+  .header-img {
+    width: 30%; } }
+
+.header-lista {
+  width: 90%;
+  display: flex;
+  justify-content: end; }
+  @media (min-width: 840px) and (max-width: 1079px) {
+    .header-lista .header-lista {
+      width: 70%; } }
+  .header-lista .header-menu {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center; }
+    .header-lista .header-menu .header-menu li {
+      text-align: center; }
+    .header-lista .header-menu li a {
+      text-decoration: none;
+      padding: 40px;
+      cursor: pointer;
+      color: #412611;
+      font-size: 1.5rem;
+      font-family: 'Roboto Slab', serif; }
+      .header-lista .header-menu li a:hover {
+        border: solid 1px #412611;
+        background-color: #dbc0ab; }
+    @media (min-width: 840px) and (max-width: 1079px) {
+      .header-lista .header-menu li a {
+        font-size: 1.2rem; } }
+
+.sectionuno {
+  margin: auto;
+  margin-top: 200px;
+  display: flex;
+  width: 80%;
+  align-items: center; }
+  .sectionuno .section-uno-a {
+    width: 50%;
+    height: auto;
+    font-family: 'Roboto Slab', serif;
+    padding-right: 10px; }
+    .sectionuno .section-uno-a .parrafo-uno {
+      padding-top: 20px;
+      padding-left: 100px;
+      font-size: 3rem;
+      color: #935F3C; }
+    @media (min-width: 1080px) and (max-width: 1460px) {
+      .sectionuno .section-uno-a .parrafo-uno {
+        font-size: 1.7rem;
+        padding-top: 100px; } }
+    @media (min-width: 840px) and (max-width: 1079px) {
+      .sectionuno .section-uno-a .parrafo-uno {
+        font-size: 1.5rem;
+        padding-top: 150px; } }
+    .sectionuno .section-uno-a .boton-uno {
+      margin: 80px;
+      margin-left: 100px;
+      font-size: 1.2rem;
+      width: 250px;
+      height: 70px;
+      cursor: pointer;
+      border: groove #935F3C;
+      background-color: #F8F3EA;
+      color: #516555;
+      font-family: 'Roboto Slab', serif; }
+      .sectionuno .section-uno-a .boton-uno:hover {
+        background-color: #C7D7C6; }
+    @media (min-width: 840px) and (max-width: 1079px) {
+      .sectionuno .section-uno-a .boton-uno {
+        width: 200px;
+        height: 50px; } }
+  .sectionuno .section-uno-b {
+    width: 50%;
+    height: auto; }
+    .sectionuno .section-uno-b .imagen-seccion-tartaleta {
+      margin: auto;
+      display: block;
+      max-width: 100%;
+      height: auto; }
+
+.empresa {
+  width: 90%;
+  height: 250px;
+  margin: auto;
+  margin-top: 40px;
+  border: groove #935F3C;
+  background-color: #516555;
+  color: #C7D7C6; }
+
+@media (min-width: 1080px) and (max-width: 1460px) {
+  h1 {
+    font-size: 2rem; } }
+
+@media (min-width: 840px) and (max-width: 1079px) {
+  h1 {
+    font-size: 1.8rem; } }
+
+.empresa-p {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 20px; }
+
+@media (min-width: 1080px) and (max-width: 1460px) {
+  .empresa-p {
+    font-size: 1.5rem;
+    padding: 10px; } }
+
+@media (min-width: 840px) and (max-width: 1079px) {
+  .empresa-p {
+    font-size: 1.5rem; } }
+
+.subtitulo-carousel {
+  margin: 0;
+  color: #C7D7C6;
+  display: inline;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif; }
+
+@media (min-width: 1080px) and (max-width: 1460px) {
+  .subtitulo-carousel {
+    font-size: 1.5rem;
+    padding-top: 10px; } }
+
+@media (min-width: 840px) and (max-width: 1079px) {
+  .subtitulo-carousel {
+    font-size: 1.3rem; } }
+
+.carousel {
+  min-height: 600px;
+  margin-top: 100px; }
+
+@media (min-width: 1080px) and (max-width: 1460px) {
+  .carousel {
+    min-height: 500px;
+    margin-top: 50px; } }
+
+@media (min-width: 840px) and (max-width: 1079px) {
+  .carousel {
+    min-height: 300px;
+    margin-top: 50px; } }
+
+.carousel .carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+  width: 600px;
+  height: 600px; }
+
+@media (min-width: 1080px) and (max-width: 1460px) {
+  .carousel .carousel-item {
+    height: 500px;
+    width: 500px; } }
+
+@media (min-width: 840px) and (max-width: 1079px) {
+  .carousel .carousel-item {
+    height: 300px;
+    width: 300px; } }
+
+.carousel .carousel-item img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 15px; }
+
+.domicilios {
+  display: flex;
+  height: auto;
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 120px; }
+  .domicilios .imagen-domicilios {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 10px; }
+  .domicilios .titulo-domicilios {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Roboto Slab', serif; }
+  @media (min-width: 1080px) and (max-width: 1460px) {
+    .domicilios .titulo-domicilios {
+      font-size: 1.3rem; } }
+  @media (min-width: 840px) and (max-width: 1079px) {
+    .domicilios .titulo-domicilios {
+      font-size: 1.3rem; } }
+  .domicilios .parrafo-domicilios {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 50px; }
+  @media (min-width: 1080px) and (max-width: 1460px) {
+    .domicilios .parrafo-domicilios {
+      font-size: 1.1rem; } }
+  @media (min-width: 840px) and (max-width: 1079px) {
+    .domicilios .parrafo-domicilios {
+      font-size: 1rem; } }
+  .domicilios .caja1-domicilios {
+    width: 33%; }
+  .domicilios .caja2-domicilios {
+    width: 33%; }
+  .domicilios .caja3-domicilios {
+    width: 34%; }
+
+@media (min-width: 1080px) and (max-width: 1460px) {
+  .domicilios {
+    width: 100%; } }
+
+@media (min-width: 840px) and (max-width: 1079px) {
+  .domicilios {
+    width: 100%;
+    margin-top: 50px; } }
+
+.creditos {
+  display: grid;
+  background-color: #516555;
+  height: 800px;
+  grid-template-areas: "footer-logo footer-logo" "footer-email footer-compañia" "footer-redes footer-contacto";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 150px 325px 325px; }
+  .creditos .footer-logo {
+    grid-area: footer-logo;
+    border: 1px solid #bf743c; }
+    .creditos .footer-logo .contenedor-img-footer {
+      width: 100px;
+      height: 120px;
+      padding-top: 10px;
+      display: block;
+      margin: auto; }
+    .creditos .footer-logo .img-footer {
+      width: 80%; }
+  .creditos .footer-email {
+    grid-area: footer-email; }
+    .creditos .footer-email .in-email {
+      margin: 60px;
+      background-color: #516555;
+      width: 300px;
+      height: 50px;
+      border-style: solid none solid solid;
+      border-color: #000 #000 #f8f3e9;
+      border-top-width: 0;
+      border-bottom-width: 1px;
+      border-left-width: 0;
+      background-color: transparent;
+      font-size: 1rem; }
+    .creditos .footer-email #footer-email-index {
+      margin: 60px;
+      background-color: #516555;
+      width: 300px;
+      height: 50px;
+      border-style: solid none solid solid;
+      border-color: #000 #000 #f8f3e9;
+      border-top-width: 0;
+      border-bottom-width: 1px;
+      border-left-width: 0;
+      background-color: transparent;
+      font-size: 1rem; }
+    @media (min-width: 1080px) and (max-width: 1460px) {
+      .creditos .footer-email #footer-email-index {
+        width: 220px; } }
+    @media (min-width: 840px) and (max-width: 1079px) {
+      .creditos .footer-email #footer-email-index {
+        width: 190px; } }
+    .creditos .footer-email .button-email {
+      color: #f8f3e9;
+      border-color: #f8f3e9;
+      background-color: rgba(0, 0, 0, 0);
+      border: 1px solid #bf743c;
+      border-radius: 100%;
+      width: 170px;
+      height: 90px;
+      font-size: 1.2rem;
+      cursor: pointer; }
+      .creditos .footer-email .button-email:hover {
+        background-color: #F8F3EA;
+        color: #516555;
+        transition-duration: .7s,.7s;
+        transition: background-color 1s,border-color 1s;
+        border: solid 1px white; }
+    @media (min-width: 1080px) and (max-width: 1460px) {
+      .creditos .footer-email .button-email {
+        width: 140px;
+        height: 60px; } }
+    @media (min-width: 840px) and (max-width: 1079px) {
+      .creditos .footer-email .button-email {
+        width: 100px;
+        height: 50px; } }
+  .creditos .footer-redes {
+    grid-area: footer-redes;
+    /* Estilos redes sociales */ }
+    .creditos .footer-redes .sm {
+      margin: 60px; }
+    .creditos .footer-redes .sm a {
+      display: inline-flex;
+      text-decoration: none;
+      font-size: 36px;
+      width: 60px;
+      height: 60px;
+      color: #f0f0f0;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin: 0.7px; }
+    @media (min-width: 1080px) and (max-width: 1460px) {
+      .creditos .footer-redes .sm a {
+        font-size: 29px; } }
+    @media (min-width: 840px) and (max-width: 1079px) {
+      .creditos .footer-redes .sm a {
+        font-size: 26px;
+        padding: 0.3px; } }
+    .creditos .footer-redes .sm a::before {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-radius: 25%;
+      z-index: -1;
+      transition: transform .3s ease-in; }
+    .creditos .footer-redes .sm a:nth-child(1)::before {
+      background: #38529a; }
+    .creditos .footer-redes .sm a:nth-child(2)::before {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+    .creditos .footer-redes .sm a:nth-child(3)::before {
+      background: #1c96e9; }
+    .creditos .footer-redes .sm a:nth-child(4)::before {
+      background: #f70000; }
+    .creditos .footer-redes .sm a:nth-child(5)::before {
+      background: #046596; }
+    .creditos .footer-redes .sm a:hover::before {
+      transform: scale(0); }
+    .creditos .footer-redes .sm a i {
+      transition: transform .3s ease-in; }
+    .creditos .footer-redes .sm a:nth-child(1):hover i {
+      background: #38529a;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transform: scale(1.5); }
+    .creditos .footer-redes .sm a:nth-child(2):hover i {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transform: scale(1.5); }
+    .creditos .footer-redes .sm a:nth-child(3):hover i {
+      background: #0dae1e;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transform: scale(1.5); }
+    .creditos .footer-redes .sm a:nth-child(4):hover i {
+      background: #f70000;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transform: scale(1.5); }
+    .creditos .footer-redes .sm a:nth-child(5):hover i {
+      background: #046596;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transform: scale(1.5); }
+  .creditos .footer-compañia {
+    grid-area: footer-compañia; }
+    .creditos .footer-compañia .descripcion-empresa-index {
+      color: #f8f3e9;
+      font-size: 1.8rem;
+      padding: 10px;
+      padding-left: 50px;
+      width: 73%;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; }
+    @media (min-width: 1080px) and (max-width: 1460px) {
+      .creditos .footer-compañia .descripcion-empresa-index {
+        font-size: 1.3rem;
+        padding-left: 140px;
+        width: 96%; } }
+    @media (min-width: 840px) and (max-width: 1079px) {
+      .creditos .footer-compañia .descripcion-empresa-index {
+        font-size: 1rem;
+        padding-left: 50px;
+        padding-top: 60px;
+        width: 100%; } }
+    .creditos .footer-compañia .descripcion-empresa-productos {
+      color: #f8f3e9;
+      font-size: 1.7rem;
+      padding: 20px;
+      padding-left: 50px;
+      width: 73%;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+      line-height: 1.6; }
+  .creditos .footer-contacto {
+    grid-area: footer-contacto; }
+    .creditos .footer-contacto .datos-contacto-index {
+      color: #f8f3e9;
+      font-size: 2rem;
+      padding: 10px;
+      padding-left: 50px;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; }
+    @media (min-width: 1080px) and (max-width: 1460px) {
+      .creditos .footer-contacto .datos-contacto-index {
+        font-size: 1.3rem;
+        padding-left: 140px;
+        width: 96%; } }
+    @media (min-width: 840px) and (max-width: 1079px) {
+      .creditos .footer-contacto .datos-contacto-index {
+        font-size: 1rem;
+        padding-left: 50px;
+        padding-top: 20px;
+        width: 100%; } }
+    .creditos .footer-contacto .datos-contacto-productos {
+      color: #f8f3e9;
+      font-size: 1.7rem;
+      padding: 10px;
+      padding-top: 20px;
+      padding-left: 50px;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; }
+
+.galletas-productos {
+  margin-top: 140px;
+  display: grid;
+  height: 1180px;
+  margin-left: 80px;
+  margin-right: 80px;
+  grid-template-areas: "titulo-galletas-principal titulo-galletas-principal titulo-galletas-principal titulo-galletas-principal" "foto-galletas foto-galletas producto1 producto2" "foto-galletas foto-galletas producto3 producto4";
+  grid-template-columns: 18.5% 20% 30% 30%;
+  grid-template-rows: 100px 504px 504px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: center; }
+  .galletas-productos .titulo-galletas-principal {
+    grid-area: titulo-galletas-principal;
+    background-color: #516555;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 20px;
+    font-family: 'Roboto Slab', serif;
+    color: #C7D7C6;
+    border: 1px solid #bf743c; }
+  .galletas-productos .foto-galletas {
+    grid-area: foto-galletas;
+    align-self: center; }
+    .galletas-productos .foto-galletas .img-galletas-principal {
+      max-width: 80%;
+      display: block;
+      margin: auto;
+      border-radius: 50%;
+      box-shadow: 0px 1px 15px; }
+  .galletas-productos .producto1 {
+    grid-area: producto1;
+    justify-self: center; }
+    .galletas-productos .producto1 #boton-queso-crema {
+      display: block;
+      margin: auto;
+      margin-top: 10px; }
+  .galletas-productos .producto2 {
+    grid-area: producto2;
+    justify-self: start; }
+    .galletas-productos .producto2 #boton-alfajor {
+      display: block;
+      margin: auto;
+      margin-top: 8px; }
+  .galletas-productos .producto3 {
+    grid-area: producto3;
+    justify-self: center; }
+    .galletas-productos .producto3 #boton-chips {
+      display: block;
+      margin: auto;
+      margin-top: 12px; }
+  .galletas-productos .producto4 {
+    grid-area: producto4;
+    justify-self: start; }
+    .galletas-productos .producto4 #boton-mantequilla {
+      display: block;
+      margin: auto;
+      margin-top: 12px; }
+
+.galletas-general {
+  height: 500px;
+  width: 300px;
+  border: 1px solid #412611;
+  overflow: hidden;
+  border-radius: 3%;
+  box-shadow: 0px 1px 15px;
+  transition: all 400ms ease; }
+
+.galletas-general:hover {
+  transform: translatey(-3%); }
+
+.img-galletas {
+  width: 90%;
+  padding: 15px; }
+
+.titulo-galletas {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
+  text-align: center;
+  color: #412611; }
+
+.descripcion-galletas {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 10px;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87); }
+
+.precio-galletas {
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.8rem; }
+
+.boton-comprar-galletas {
+  height: 40px;
+  width: 120px;
+  color: #412611;
+  cursor: pointer; }
+
+/* ------------------------- */
+/* pagina postres con sus respectivos productos trabajado con grid */
+/* ------------------------- */
+.postres-productos {
+  margin-top: 140px;
+  display: grid;
+  height: 1800px;
+  margin-left: 80px;
+  margin-right: 80px;
+  grid-template-areas: "titulo-postres titulo-postres titulo-postres titulo-postres" "foto-postres foto-postres postre1 postre2" "foto-postres foto-postres postre3 postre4" "postre6 postre7 none none";
+  grid-template-columns: 18% 18% 28% 28%;
+  grid-template-rows: 100px 504px 504px 504px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: center; }
+  .postres-productos .titulo-postres {
+    grid-area: titulo-postres;
+    background-color: #516555;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 20px;
+    font-family: 'Roboto Slab', serif;
+    color: #C7D7C6;
+    border: 1px solid #bf743c; }
+  .postres-productos .foto-postres {
+    grid-area: foto-postres;
+    align-self: center;
+    justify-self: center; }
+    .postres-productos .foto-postres .img-postres-principal {
+      max-width: 100%;
+      display: block;
+      margin: auto;
+      border-radius: 10%;
+      box-shadow: 0px 1px 15px; }
+  .postres-productos .postre1 {
+    grid-area: postre1;
+    justify-self: center; }
+  .postres-productos .postre2 {
+    grid-area: postre2;
+    justify-self: start; }
+  .postres-productos .postre3 {
+    grid-area: postre3;
+    justify-self: center; }
+  .postres-productos .postre4 {
+    grid-area: postre4;
+    justify-self: start; }
+  .postres-productos .postre6 {
+    grid-area: postre6;
+    justify-self: center; }
+  .postres-productos .postre7 {
+    grid-area: postre7;
+    justify-self: center; }
+
+.titulo-principal-postres {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
+  text-align: center;
+  color: #412611; }
+
+.descripcion-postres {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 10px;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87); }
+
+.precio-postres {
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.8rem; }
+
+.img-postres {
+  width: 90%;
+  padding: 15px; }
+
+.postres-general {
+  height: 500px;
+  width: 300px;
+  border: 1px solid #412611;
+  overflow: hidden;
+  border-radius: 3%;
+  box-shadow: 0px 1px 15px;
+  transition: all 400ms ease; }
+  .postres-general .postres-general:hover {
+    transform: translatey(-3%); }
+
+.boton-comprar-postres {
+  display: block;
+  margin: auto;
+  height: 40px;
+  width: 120px;
+  color: #412611;
+  cursor: pointer; }
+
+/* ------------------------- */
+/* pagina panes con sus respectivos productos trabajado con grid */
+/* ------------------------- */
+.panes-productos {
+  margin-top: 140px;
+  display: grid;
+  height: 1800px;
+  margin-left: 80px;
+  margin-right: 80px;
+  grid-template-areas: "titulo-panes titulo-panes titulo-panes titulo-panes" "foto-panes foto-panes pan1 pan2" "foto-panes foto-panes pan3 pan4" "pan5 pan6 none none";
+  grid-template-columns: 18% 18% 28% 28%;
+  grid-template-rows: 100px 504px 504px 504px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: center; }
+  .panes-productos .titulo-panes {
+    grid-area: titulo-panes;
+    background-color: #516555;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 20px;
+    font-family: 'Roboto Slab', serif;
+    color: #C7D7C6;
+    border: 1px solid #bf743c; }
+  .panes-productos .foto-panes {
+    grid-area: foto-panes;
+    align-self: center;
+    justify-self: center; }
+    .panes-productos .foto-panes .img-panes-principal {
+      max-width: 100%;
+      display: block;
+      margin: auto;
+      border-radius: 10%;
+      box-shadow: 0px 1px 15px; }
+  .panes-productos .pan1 {
+    grid-area: pan1;
+    justify-self: center; }
+  .panes-productos .pan2 {
+    grid-area: pan2;
+    justify-self: start; }
+  .panes-productos .pan3 {
+    grid-area: pan3;
+    justify-self: center; }
+  .panes-productos .pan4 {
+    grid-area: pan4;
+    justify-self: start; }
+  .panes-productos .pan5 {
+    grid-area: pan5;
+    justify-self: center; }
+  .panes-productos .pan6 {
+    grid-area: pan6;
+    justify-self: center; }
+
+.titulo-principal-panes {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
+  text-align: center;
+  color: #412611; }
+
+.descripcion-panes {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 10px;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87); }
+
+.precio-panes {
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.8rem; }
+
+.img-panes {
+  width: 90%;
+  padding: 15px; }
+
+.panes-general {
+  height: 500px;
+  width: 300px;
+  border: 1px solid #412611;
+  overflow: hidden;
+  border-radius: 3%;
+  box-shadow: 0px 1px 15px;
+  transition: all 400ms ease; }
+  .panes-general .panes-general:hover {
+    transform: translatey(-3%); }
+
+.boton-comprar-galletas {
+  display: block;
+  margin: auto;
+  height: 40px;
+  width: 120px;
+  color: #412611;
+  cursor: pointer; }
+
+/* ------------------------- */
+/* pagina tartaletas con sus respectivos productos trabajado con grid */
+/* ------------------------- */
+.tartaletas-productos {
+  margin-top: 140px;
+  display: grid;
+  height: 2900px;
+  margin-left: 80px;
+  margin-right: 80px;
+  grid-template-areas: "titulo-tartaletas titulo-tartaletas titulo-tartaletas titulo-tartaletas" "foto-tartaletas foto-tartaletas tarta1 tarta2" "foto-tartaletas foto-tartaletas tarta3 tarta4" "tarta5 tarta6 tarta7 tarta8" "tarta9 tarta10 tarta11 tarta12" "tarta13 tarta14 none none";
+  grid-template-columns: 18% 18% 28% 28%;
+  grid-template-rows: 100px 504px 504px 504px 504px 504px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: center; }
+  .tartaletas-productos .titulo-tartaletas {
+    grid-area: titulo-tartaletas;
+    background-color: #516555;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 20px;
+    font-family: 'Roboto Slab', serif;
+    color: #C7D7C6;
+    border: 1px solid #bf743c; }
+  .tartaletas-productos .foto-tartaletas {
+    grid-area: foto-tartaletas;
+    align-self: center;
+    justify-self: center; }
+    .tartaletas-productos .foto-tartaletas .img-tartaletas-principal {
+      max-width: 100%;
+      display: block;
+      margin: auto;
+      border-radius: 10%;
+      box-shadow: 0px 1px 15px; }
+  .tartaletas-productos .tarta1 {
+    grid-area: tarta1;
+    justify-self: center; }
+  .tartaletas-productos .tarta2 {
+    grid-area: tarta2;
+    justify-self: start; }
+  .tartaletas-productos .tarta3 {
+    grid-area: tarta3;
+    justify-self: center; }
+  .tartaletas-productos .tarta4 {
+    grid-area: tarta4;
+    justify-self: start; }
+  .tartaletas-productos .tarta5 {
+    grid-area: tarta5;
+    justify-self: center; }
+  .tartaletas-productos .tarta6 {
+    grid-area: tarta6;
+    justify-self: center; }
+  .tartaletas-productos .tarta7 {
+    grid-area: tarta7;
+    justify-self: center; }
+  .tartaletas-productos .tarta8 {
+    grid-area: tarta8;
+    justify-self: start; }
+  .tartaletas-productos .tarta9 {
+    grid-area: tarta9;
+    justify-self: center; }
+  .tartaletas-productos .tarta10 {
+    grid-area: tarta10;
+    justify-self: center; }
+  .tartaletas-productos .tarta11 {
+    grid-area: tarta11;
+    justify-self: center; }
+  .tartaletas-productos .tarta12 {
+    grid-area: tarta12;
+    justify-self: start; }
+  .tartaletas-productos .tarta13 {
+    grid-area: tarta13;
+    justify-self: center; }
+  .tartaletas-productos .tarta14 {
+    grid-area: tarta14;
+    justify-self: center; }
+
+.titulo-principal-tartaletas {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
+  text-align: center;
+  color: #412611; }
+
+.descripcion-tartaletas {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 10px;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87); }
+
+.precio-tartaletas {
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: 'Roboto Slab', serif; }
+
+.img-tartaletas {
+  width: 90%;
+  padding: 15px; }
+
+.tartaletas-general {
+  height: 500px;
+  width: 300px;
+  border: 1px solid #412611;
+  overflow: hidden;
+  border-radius: 3%;
+  box-shadow: 0px 1px 15px;
+  transition: all 400ms ease; }
+  .tartaletas-general .tartaletas-general:hover {
+    transform: translatey(-3%); }
+
+.boton-comprar-galletas {
+  display: block;
+  margin: auto;
+  height: 40px;
+  width: 120px;
+  color: #412611;
+  cursor: pointer; }
+
+/* ------------------------- */
+/* pagina Tortas con sus respectivos productos trabajado con grid */
+/* ------------------------- */
+.tortas-productos {
+  margin-top: 140px;
+  display: grid;
+  height: 1800px;
+  margin-left: 80px;
+  margin-right: 80px;
+  grid-template-areas: "titulo-tortas titulo-tortas titulo-tortas titulo-tortas titulo-tortas" "foto-tortas foto-tortas torta1 torta2 torta2" "foto-tortas foto-tortas torta3 torta4 torta4" "torta5 torta6 torta7 torta8 torta9";
+  grid-template-columns: 18% 18% 15% 15% 15%;
+  grid-template-rows: 100px 504px 504px 504px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: center; }
+  .tortas-productos .titulo-tortas {
+    grid-area: titulo-tortas;
+    background-color: #516555;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 20px;
+    font-family: 'Roboto Slab', serif;
+    color: #C7D7C6;
+    border: 1px solid #bf743c; }
+  .tortas-productos .foto-tortas {
+    grid-area: foto-tortas;
+    align-self: center;
+    justify-self: center; }
+    .tortas-productos .foto-tortas .img-tortas-principal {
+      max-width: 80%;
+      display: block;
+      margin: auto;
+      border-radius: 10%;
+      box-shadow: 0px 1px 15px; }
+  .tortas-productos .torta1 {
+    grid-area: torta1;
+    justify-self: start; }
+  .tortas-productos .torta2 {
+    grid-area: torta2;
+    justify-self: center; }
+  .tortas-productos .torta3 {
+    grid-area: torta3;
+    justify-self: start; }
+  .tortas-productos .torta4 {
+    grid-area: torta4;
+    justify-self: center; }
+  .tortas-productos .torta5 {
+    grid-area: torta5;
+    justify-self: center; }
+  .tortas-productos .torta6 {
+    grid-area: torta6;
+    justify-self: center; }
+  .tortas-productos .torta7 {
+    grid-area: torta7;
+    justify-self: start; }
+  .tortas-productos .torta8 {
+    grid-area: torta8;
+    justify-self: center; }
+  .tortas-productos .torta9 {
+    grid-area: torta9;
+    justify-self: center; }
+
+.titulo-principal-tortas {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
+  text-align: center;
+  color: #412611; }
+
+.descripcion-tortas {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 10px;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87); }
+
+.precio-tortas {
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: 'Roboto Slab', serif; }
+
+.img-tortas {
+  width: 90%;
+  padding: 15px; }
+
+.tortas-general {
+  height: 500px;
+  width: 300px;
+  border: 1px solid #412611;
+  overflow: hidden;
+  border-radius: 3%;
+  box-shadow: 0px 1px 15px;
+  transition: all 400ms ease; }
+  .tortas-general .tortas-general:hover {
+    transform: translatey(-3%); }
+
+.boton-comprar-galletas {
+  display: block;
+  margin: auto;
+  height: 40px;
+  width: 120px;
+  color: #412611;
+  cursor: pointer; }

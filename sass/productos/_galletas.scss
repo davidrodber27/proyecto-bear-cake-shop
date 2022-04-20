@@ -1,0 +1,158 @@
+.galletas-productos {
+    margin-top:140px; 
+    display: grid;
+    height: 1180px;
+    margin-left: 80px;
+    margin-right: 80px;
+    grid-template-areas: 
+    "titulo-galletas-principal titulo-galletas-principal titulo-galletas-principal titulo-galletas-principal"
+    "foto-galletas foto-galletas producto1 producto2"
+    "foto-galletas foto-galletas producto3 producto4";
+   grid-template-columns: 18.5% 20% 30% 30%;
+   grid-template-rows: 100px 504px 504px;
+   grid-column-gap: 20px;
+   grid-row-gap: 20px;
+   justify-content: center;
+
+
+        .titulo-galletas-principal{
+         grid-area: titulo-galletas-principal;
+         background-color:#516555;
+         text-align: center;
+         font-size: 2rem;
+         padding-top:20px;
+         font-family: 'Roboto Slab', serif;
+         color: #C7D7C6;
+         border: 1px solid #bf743c;
+    }
+    
+        .foto-galletas {
+         grid-area: foto-galletas;
+         align-self: center; 
+         
+            .img-galletas-principal {
+              max-width: 80%;
+              display: block;
+              margin: auto;
+              border-radius: 50%;
+              box-shadow: 0px 1px 15px;
+        }
+    }   
+
+        .producto1 {
+          grid-area: producto1;
+          justify-self: center;
+
+            #boton-queso-crema {
+              display: block;
+              margin:auto;
+              margin-top: 10px;
+        }
+    }
+     
+        .producto2 {
+           grid-area: producto2;
+           justify-self: start;
+
+            #boton-alfajor {
+              display: block;
+              margin:auto;
+              margin-top: 8px;
+        }
+    }
+     
+        .producto3 {
+          grid-area: producto3;
+          justify-self: center;
+
+            #boton-chips{
+              display: block;
+              margin:auto;
+              margin-top: 12px;
+        }
+
+    }
+     
+       .producto4 {
+          grid-area: producto4;
+          justify-self: start;
+
+            #boton-mantequilla{
+              display: block;
+              margin:auto;
+              margin-top: 12px;
+        }  
+    }
+}
+
+.galletas-general {
+    height: 500px;
+    width: 300px;
+    border: 1px solid #412611;
+    overflow: hidden;
+    border-radius: 3%;
+    box-shadow: 0px 1px 15px;
+    transition: all 400ms ease;
+}
+
+  .galletas-general:hover {
+    transform: translatey(-3%);
+}
+
+  .img-galletas {
+     width: 90%; 
+     padding: 15px; 
+}
+
+  .titulo-galletas {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem; 
+    text-align: center; 
+    color: #412611;
+}
+
+ .descripcion-galletas {
+    font-size: 0.8rem; 
+    text-align: center; 
+    padding: 10px;
+    line-height: 1.5;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-weight: normal;
+    color: rgba(0,0,0,0.87);
+}
+
+  .precio-galletas {
+    text-align: center; 
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.8rem; 
+}
+
+  .boton-comprar-galletas{
+    height: 40px;
+    width: 120px;
+    color:  #412611;
+    cursor: pointer;  
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

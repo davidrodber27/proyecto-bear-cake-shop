@@ -1,0 +1,23 @@
+{
+  "name": "coder",
+  "version": "1.0.0",
+  "description": "Migrando proyecto a SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass":"node-sass sass/main.scss css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidrodber27/proyecto-bear-cake-shop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidrodber27/proyecto-bear-cake-shop/issues"
+  },
+  "homepage": "https://github.com/davidrodber27/proyecto-bear-cake-shop#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

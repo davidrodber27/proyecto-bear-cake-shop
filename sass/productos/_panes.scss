@@ -1,0 +1,136 @@
+/* ------------------------- */
+/* pagina panes con sus respectivos productos trabajado con grid */
+/* ------------------------- */
+
+.panes-productos {
+    margin-top:140px; 
+    display: grid;
+    height: 1800px;
+    margin-left: 80px;
+    margin-right: 80px;
+    grid-template-areas: 
+    "titulo-panes titulo-panes titulo-panes titulo-panes"
+    "foto-panes foto-panes pan1 pan2"
+    "foto-panes foto-panes pan3 pan4"
+    "pan5 pan6 none none";
+   grid-template-columns: 18% 18% 28% 28%;
+   grid-template-rows: 100px 504px 504px 504px;
+   grid-column-gap: 20px;
+   grid-row-gap: 20px;
+   justify-content: center;
+
+
+   .titulo-panes{
+       grid-area: titulo-panes;
+       background-color:#516555;
+       text-align: center;
+       font-size: 2rem;
+       padding-top:20px;
+       font-family: 'Roboto Slab', serif;
+       color: #C7D7C6;
+       border: 1px solid #bf743c; 
+   }
+
+   .foto-panes {
+       grid-area: foto-panes;
+       align-self: center;
+       justify-self: center;
+
+       .img-panes-principal {
+          max-width: 100%;
+          display: block;
+          margin: auto;
+          border-radius: 10%;
+          box-shadow: 0px 1px 15px;
+        }
+    }
+
+    .pan1{
+     grid-area: pan1;
+     justify-self: center;
+    }
+ 
+    .pan2 {
+       grid-area: pan2;
+       justify-self: start;
+    }
+ 
+    .pan3 {
+        grid-area: pan3;
+        justify-self: center;
+    }
+
+    .pan4 {
+        grid-area: pan4;
+        justify-self: start;
+    }
+
+    .pan5 {
+        grid-area: pan5;
+        justify-self: center;
+        }
+
+    .pan6 {
+        grid-area: pan6;
+        justify-self: center;
+    } 
+}
+
+
+
+.titulo-principal-panes {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem; 
+    text-align: center; 
+    color: #412611;
+    
+}
+
+.descripcion-panes {
+    font-size: 0.8rem; 
+    text-align: center; 
+    padding: 10px;
+    line-height: 1.5;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-weight: normal;
+    color: rgba(0,0,0,0.87);
+}
+
+.precio-panes {
+    text-align: center; 
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.8rem;
+}
+ 
+.img-panes {
+    width: 90%; 
+    padding: 15px; 
+}
+ 
+.panes-general {
+    height: 500px;
+    width: 300px;
+    border: 1px solid #412611;
+    overflow: hidden;
+    border-radius: 3%;
+    box-shadow: 0px 1px 15px;
+    transition: all 400ms ease;
+
+       .panes-general:hover {
+        transform: translatey(-3%);
+    }
+}
+
+
+.boton-comprar-galletas{
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 120px;
+    color:  #412611;
+    cursor: pointer;  
+}
+   
+
+
+ 

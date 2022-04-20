@@ -1,0 +1,177 @@
+/* ------------------------- */
+/* pagina tartaletas con sus respectivos productos trabajado con grid */
+/* ------------------------- */
+
+.tartaletas-productos {
+    margin-top:140px; 
+    display: grid;
+    height: 2900px;
+    margin-left: 80px;
+    margin-right: 80px;
+    grid-template-areas: 
+    "titulo-tartaletas titulo-tartaletas titulo-tartaletas titulo-tartaletas"
+    "foto-tartaletas foto-tartaletas tarta1 tarta2"
+    "foto-tartaletas foto-tartaletas tarta3 tarta4"
+    "tarta5 tarta6 tarta7 tarta8"
+    "tarta9 tarta10 tarta11 tarta12"
+    "tarta13 tarta14 none none";
+   grid-template-columns: 18% 18% 28% 28%;
+   grid-template-rows: 100px 504px 504px 504px 504px 504px;
+   grid-column-gap: 20px;
+   grid-row-gap: 20px;
+   justify-content: center;
+
+   .titulo-tartaletas{
+       grid-area: titulo-tartaletas;
+       background-color:#516555;
+       text-align: center;
+       font-size: 2rem;
+       padding-top:20px;
+       font-family: 'Roboto Slab', serif;
+       color: #C7D7C6;
+       border: 1px solid #bf743c; 
+    }
+   
+   .foto-tartaletas {
+       grid-area: foto-tartaletas;
+       align-self: center;
+       justify-self: center;
+
+       .img-tartaletas-principal {
+            max-width: 100%;
+            display: block;
+            margin: auto;
+            border-radius: 10%;
+            box-shadow: 0px 1px 15px;
+        }
+    }
+   
+    .tarta1{
+        grid-area: tarta1;
+        justify-self: center;  
+    }
+     
+    .tarta2 {
+        grid-area: tarta2;
+        justify-self: start;     
+    }
+    
+    .tarta3 {
+        grid-area: tarta3;
+        justify-self: center;    
+    }
+    
+    .tarta4 {
+        grid-area: tarta4;
+        justify-self: start;    
+    }
+    
+    .tarta5 {
+        grid-area: tarta5;
+        justify-self: center;    
+    }
+    
+    .tarta6 {
+        grid-area: tarta6;
+        justify-self: center;        
+    }
+    
+    .tarta7{
+        grid-area: tarta7;
+        justify-self: center;   
+    }
+    
+    
+    .tarta8 {
+       grid-area: tarta8;
+       justify-self: start;   
+    }
+    
+    .tarta9 {
+       grid-area: tarta9;
+       justify-self: center;   
+    }
+    
+    .tarta10 {
+       grid-area: tarta10;
+       justify-self: center;   
+    }
+    
+    .tarta11 {
+       grid-area: tarta11;
+       justify-self: center;   
+    }
+    
+    .tarta12 {
+       grid-area: tarta12;
+       justify-self: start;      
+    }
+    
+    .tarta13 {
+        grid-area: tarta13;
+        justify-self: center;   
+    }
+     
+    .tarta14 {
+        grid-area: tarta14;
+        justify-self: center;       
+    } 
+}
+
+
+
+.titulo-principal-tartaletas {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem; 
+    text-align: center; 
+    color: #412611;
+    
+}
+
+.descripcion-tartaletas {
+    font-size: 0.8rem; 
+    text-align: center; 
+    padding: 10px;
+    line-height: 1.5;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-weight: normal;
+    color: rgba(0,0,0,0.87);   
+}
+
+.precio-tartaletas {
+    text-align: center; 
+    font-size: 0.8rem; 
+    font-family: 'Roboto Slab', serif;
+}
+
+.img-tartaletas {
+    width: 90%; 
+    padding: 15px; 
+}
+ 
+.tartaletas-general {
+    height: 500px;
+    width: 300px;
+    border: 1px solid #412611;
+    overflow: hidden;
+    border-radius: 3%;
+    box-shadow: 0px 1px 15px;
+    transition: all 400ms ease; 
+
+    .tartaletas-general:hover {
+      transform: translatey(-3%);
+    }   
+}
+
+.boton-comprar-galletas{
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 120px;
+    color:  #412611;
+    cursor: pointer;  
+}
+   
+
+
+ 

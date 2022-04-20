@@ -1,0 +1,312 @@
+.creditos {
+  display: grid;
+  background-color:  #516555;
+  height: 800px;
+  grid-template-areas: 
+  "footer-logo footer-logo"
+  "footer-email footer-compañia"
+  "footer-redes footer-contacto";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 150px 325px 325px;
+   
+  .footer-logo{
+    grid-area: footer-logo;
+    border: 1px solid #bf743c;
+
+    .contenedor-img-footer{
+      width: 100px;
+      height: 120px;
+      padding-top: 10px;
+      display: block;
+      margin: auto;
+    }
+
+    .img-footer{
+      width: 80%;
+    }
+  }
+
+  .footer-email {
+    grid-area: footer-email;
+
+    .in-email{
+      margin: 60px; 
+      background-color: #516555;
+      width: 300px;
+      height: 50px;
+      border-style: solid none solid solid;
+      border-color: #000 #000 #f8f3e9;
+      border-top-width: 0;
+      border-bottom-width: 1px;
+      border-left-width: 0;
+      background-color: transparent;
+      font-size: 1rem;
+    }
+
+    #footer-email-index {
+      margin: 60px; 
+      background-color: #516555;
+      width: 300px;
+      height: 50px;
+      border-style: solid none solid solid;
+      border-color: #000 #000 #f8f3e9;
+      border-top-width: 0;
+      border-bottom-width: 1px;
+      border-left-width: 0;
+      background-color: transparent;
+      font-size: 1rem;
+    }
+
+    @media (min-width: 1080px) and (max-width: 1460px){  
+      #footer-email-index  {
+        width: 220px; 
+      }
+    }
+
+    @media (min-width: 840px) and (max-width: 1079px) {
+      #footer-email-index {
+        width: 190px;     
+      }
+    }
+
+    .button-email{
+      color: rgb(248, 243, 233);
+      border-color: rgb(248, 243, 233);
+      background-color: rgba(0, 0, 0, 0);
+      border: 1px solid #bf743c;
+      border-radius: 100%;
+      width: 170px;
+      height: 90px;
+      font-size: 1.2rem;
+      cursor: pointer;
+
+      &:hover{
+        background-color: #F8F3EA;
+        color:#516555; 
+        transition-duration: .7s,.7s;
+        transition: background-color 1s,border-color 1s;
+        border: solid 1px white;
+      }
+    }
+
+    @media (min-width: 1080px) and (max-width: 1460px){
+      .button-email  {
+        width: 140px; 
+        height: 60px;
+      }
+    }
+    
+    @media (min-width: 840px) and (max-width: 1079px) {
+      .button-email {
+        width: 100px;
+        height: 50px    
+      }
+    }
+  }
+
+  .footer-redes {
+    grid-area: footer-redes;
+
+    /* Estilos redes sociales */
+
+    .sm {
+      margin: 60px;  
+    }
+
+    .sm a{
+      display: inline-flex;
+      text-decoration: none;
+      font-size: 36px;
+      width: 60px;
+      height: 60px;
+      color: #f0f0f0;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin: 0.7px;
+    }
+
+    @media (min-width: 1080px) and (max-width: 1460px){
+      .sm a  {
+        font-size: 29px; 
+      }
+    }
+
+    @media (min-width: 840px) and (max-width: 1079px) {
+      .sm a {
+        font-size: 26px; 
+        padding: 0.3px;    
+      }
+    }
+
+    .sm a::before{
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-radius: 25%;
+      z-index: -1;
+      transition: transform .3s ease-in;
+    }
+
+    .sm a:nth-child(1)::before{
+      background: #38529a;
+    }
+
+    .sm a:nth-child(2)::before{
+      background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,
+      #dc2743 50%,#cc2366 75%,#bc1888 100%);
+    }
+
+    .sm a:nth-child(3)::before{
+      background: #1c96e9;
+    }
+
+    .sm a:nth-child(4)::before{
+       background: #f70000;
+    }
+
+    .sm a:nth-child(5)::before{
+      background: #046596;
+    }
+
+    .sm a:hover::before{
+      transform: scale(0);
+    }
+
+    .sm a i{
+      transition: transform .3s ease-in;
+    }
+
+    .sm a:nth-child(1):hover i{
+      background: #38529a;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transform: scale(1.5);
+    }
+
+    .sm a:nth-child(2):hover i{
+      background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,
+      #dc2743 50%,#cc2366 75%,#bc1888 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transform: scale(1.5);
+    }
+
+    .sm a:nth-child(3):hover i{
+      background: #0dae1e;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transform: scale(1.5);
+    }
+
+    .sm a:nth-child(4):hover i{
+      background: #f70000;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transform: scale(1.5);
+    }
+
+    .sm a:nth-child(5):hover i{
+      background: #046596;
+      -webkit-background-clip:text;
+      -webkit-text-fill-color: transparent;
+      transform: scale(1.5);
+    }
+  }
+
+  .footer-compañia {
+    grid-area: footer-compañia;   
+
+    .descripcion-empresa-index{
+      color: rgb(248, 243, 233);
+      font-size: 1.8rem;
+      padding: 10px;
+      padding-left: 50px;
+      width: 73%;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    }
+
+    @media (min-width: 1080px) and (max-width: 1460px){
+      .descripcion-empresa-index  {
+        font-size: 1.3rem; 
+        padding-left: 140px;
+        width: 96%;
+      }
+    }
+
+    @media (min-width: 840px) and (max-width: 1079px) {
+      .descripcion-empresa-index {
+        font-size: 1rem; 
+        padding-left: 50px;
+        padding-top: 60px;
+        width: 100%;   
+      }
+    }
+
+    .descripcion-empresa-productos{
+      color: rgb(248, 243, 233);
+      font-size: 1.7rem;
+      padding: 20px;
+      padding-left: 50px;
+      width: 73%;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+      line-height: 1.6;
+    }
+  } 
+
+  .footer-contacto{
+    grid-area: footer-contacto;
+
+    .datos-contacto-index {
+      color: rgb(248, 243, 233);
+      font-size: 2rem;
+      padding: 10px;
+      padding-left: 50px;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    }
+
+    @media (min-width: 1080px) and (max-width: 1460px){
+      .datos-contacto-index  {
+        font-size: 1.3rem; 
+        padding-left: 140px;
+        width: 96%; 
+      }
+    }
+
+    @media (min-width: 840px) and (max-width: 1079px) {
+      .datos-contacto-index {
+        font-size: 1rem; 
+        padding-left: 50px;
+        padding-top: 20px;
+        width: 100%;   
+      }
+    }
+
+    .datos-contacto-productos {
+      color: rgb(248, 243, 233);
+      font-size: 1.7rem;
+      padding: 10px;
+      padding-top: 20px;
+      padding-left: 50px;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    }
+  }
+}
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+
+  
+  
