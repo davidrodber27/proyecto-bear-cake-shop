@@ -18,9 +18,6 @@
     font-size: 1.5rem;
     text-align: center;
     font-family: 'Roboto Slab', serif; 
-
-
-
   }
 
   @media (min-width: 1080px) and (max-width: 1460px){
@@ -35,6 +32,19 @@
    }
   }
 
+  @media (min-width: 600px) and (max-width: 839px) {
+    .titulo-domicilios {
+      font-size: 1rem;
+    }     
+  }
+
+  @media (min-width: 320px) and (max-width: 600px) {
+    .titulo-domicilios {
+      font-size: 1.3rem;
+      padding-top: 70px;
+    }     
+  } 
+
   .parrafo-domicilios {
     font-size: 1.4rem;
     text-align: center;
@@ -44,6 +54,7 @@
   @media (min-width: 1080px) and (max-width: 1460px){
     .parrafo-domicilios{
     font-size: 1.1rem; 
+    
     } 
   }
 
@@ -51,20 +62,53 @@
     .parrafo-domicilios {
       font-size: 1rem;     
     }
-  }  
+  } 
+  
+  @media (min-width: 600px) and (max-width: 839px) {
+    .parrafo-domicilios {
+      font-size: 0.7rem;
+      text-align: justify;
+    }     
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .parrafo-domicilios {
+    font-size: 1rem;
+    text-align: justify;
+  }     
+}    
 
   .caja1-domicilios {
       width: 33%;
+  }
+
+  @media (min-width: 320px) and (max-width: 600px) {
+    .caja1-domicilios {
+      width: 100%;
+  }
   }
 
   .caja2-domicilios {
       width: 33%; 
   }
 
+  @media (min-width: 320px) and (max-width: 600px) {
+    .caja2-domicilios {
+      width: 100%;
+  }
+  }
+
   .caja3-domicilios {
        width: 34%; 
   }
+
+  @media (min-width: 320px) and (max-width: 600px) {
+    .caja3-domicilios {
+      width: 100%;
+  }
+  }
 }
+
 
 @media (min-width: 1080px) and (max-width: 1460px){
  .domicilios{
@@ -79,6 +123,17 @@
 }
 }
 
+@media (min-width: 600px) and (max-width: 839px) {
+  .domicilios {
+    width: 100%; 
+    margin-top: 50px;
+  }     
+}
 
+@media (min-width: 320px) and (max-width: 600px) {
+  .domicilios {
+   display: inline;
+}
+}
 
 

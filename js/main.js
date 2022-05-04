@@ -1,12 +1,19 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const elementosCarousel = document.querySelectorAll('.carousel');
-    M.Carousel.init(elementosCarousel, {
-      duration: 150,
-      dist: -80,
-      shift: 5,
-      padding: 5,
-      numVisible: 3,
-      indicators: true,
-      noWrap: false
-    });
-  });
+var swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 20,
+    stretch: 0,
+    depth: 200,
+    modifier: 1,
+    slideShadows: true,
+  },
+  loop: true,
+  autoplay: {
+    delay: 500,
+    disableOnInteraction: false,
+  },
+});
+

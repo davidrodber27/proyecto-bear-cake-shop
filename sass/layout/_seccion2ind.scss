@@ -8,6 +8,21 @@
     color: #C7D7C6;
 }
 
+@media (min-width: 600px) and (max-width: 839px) {
+    .empresa {
+        height:200px;
+        margin-top: -40px;
+    }     
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+    .empresa {
+        height:auto;
+        
+    }     
+  } 
+
+
 @media (min-width: 1080px) and (max-width: 1460px){
     h1 {
         font-size: 2rem;        
@@ -17,8 +32,15 @@
 @media (min-width: 840px) and (max-width: 1079px) {
     h1 {
       font-size: 1.8rem;    
+    }
 }
+
+@media (min-width: 0px) and (max-width: 839px) {
+    h1 {
+        font-size: 1.4rem;
+    }     
 }
+
 
 
 .empresa-p{
@@ -38,4 +60,16 @@
         .empresa-p {
         font-size: 1.5rem;    
     }
-}    
+}  
+
+@media (min-width: 600px) and (max-width: 839px) {
+    .empresa-p {
+        font-size: 1.2rem;
+    }     
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+    .empresa-p {
+        font-size: 1rem;
+    }     
+  } 
