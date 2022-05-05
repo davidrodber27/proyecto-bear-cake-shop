@@ -3,20 +3,19 @@
 /* ------------------------- */
 
 .panes-productos {
-    margin-top:140px; 
+    margin-top:180px; 
+    margin-bottom: 120px;
     display: grid;
-    height: 1800px;
-    margin-left: 80px;
-    margin-right: 80px;
+    height: auto;
     grid-template-areas: 
     "titulo-panes titulo-panes titulo-panes titulo-panes"
     "foto-panes foto-panes pan1 pan2"
     "foto-panes foto-panes pan3 pan4"
     "pan5 pan6 none none";
    grid-template-columns: 18% 18% 28% 28%;
-   grid-template-rows: 100px 504px 504px 504px;
+   grid-template-rows: 100px auto auto auto;
    grid-column-gap: 20px;
-   grid-row-gap: 20px;
+   grid-row-gap: 40px;
    justify-content: center;
 
 
@@ -25,11 +24,12 @@
        background-color:#516555;
        text-align: center;
        font-size: 2rem;
-       padding-top:20px;
+       padding-top:30px;
        font-family: 'Roboto Slab', serif;
        color: #C7D7C6;
        border: 1px solid #bf743c; 
-   }
+    }
+
 
    .foto-panes {
        grid-area: foto-panes;
@@ -48,34 +48,154 @@
     .pan1{
      grid-area: pan1;
      justify-self: center;
+
+        #boton-brioche{
+         display: block;
+          margin:auto;
+          margin-top:2px;
+          margin-bottom: 15px;
+          height: 40px;
+          width: 120px;
+  
+          &:hover{
+             background-color: #C7D7C6;
+            } 
+        }  
     }
  
     .pan2 {
        grid-area: pan2;
-       justify-self: start;
+       justify-self: center;
+
+       #boton-hamburguesa{
+        display: block;
+         margin:auto;
+         margin-top:2px;
+         margin-bottom: 15px;
+         height: 40px;
+         width: 120px;
+ 
+         &:hover{
+            background-color: #C7D7C6;
+           } 
+       }  
     }
  
     .pan3 {
         grid-area: pan3;
         justify-self: center;
+
+        #boton-almendras{
+            display: block;
+             margin:auto;
+             margin-top:2px;
+             margin-bottom: 15px;
+             height: 40px;
+             width: 120px;
+     
+             &:hover{
+                background-color: #C7D7C6;
+               } 
+           }  
     }
 
     .pan4 {
         grid-area: pan4;
-        justify-self: start;
+        justify-self: center;
+
+        #boton-espiral{
+            display: block;
+             margin:auto;
+             margin-top:2px;
+             margin-bottom: 15px;
+             height: 40px;
+             width: 120px;
+     
+             &:hover{
+                background-color: #C7D7C6;
+               } 
+           }  
     }
 
     .pan5 {
         grid-area: pan5;
         justify-self: center;
+
+        #boton-avena{
+            display: block;
+             margin:auto;
+             margin-top:2px;
+             margin-bottom: 15px;
+             height: 40px;
+             width: 120px;
+     
+             &:hover{
+                background-color: #C7D7C6;
+               } 
+           }  
         }
 
     .pan6 {
         grid-area: pan6;
         justify-self: center;
-    } 
+        
+
+        #boton-brioche2{
+            display: block;
+             margin:auto;
+             margin-top:2px;
+             margin-bottom: 15px;
+             height: 40px;
+             width: 120px;
+     
+             &:hover{
+                background-color: #C7D7C6;
+               } 
+           }  
+    }
+    
 }
 
+@media (min-width: 1250px) and (max-width: 1800px) {
+    .panes-productos {
+        grid-template-areas: 
+        "titulo-panes titulo-panes titulo-panes titulo-panes"
+        "foto-panes foto-panes pan1 pan2"
+        "foto-panes foto-panes pan3 pan4"
+        "none none pan5 pan6 ";
+    }
+}
+
+@media (min-width: 780px) and (max-width: 1249px) {
+    .panes-productos {
+     grid-template-areas: 
+     "titulo-panes titulo-panes"
+     "foto-panes foto-panes" 
+     "pan1 pan2"
+     "pan3 pan4"
+     "pan5 pan6";
+     grid-template-columns: 50% 50%;
+     grid-template-rows: 100px auto auto auto;
+     grid-column-gap: 20px;    
+    }
+}
+
+@media (min-width: 320px) and (max-width: 779px) {
+    .panes-productos {
+     grid-template-areas: 
+     "titulo-panes"
+     "foto-panes" 
+     "pan1" 
+     "pan2"
+     "pan3"
+     "pan4"
+     "pan5"
+     "pan6";
+     grid-template-columns: 90%;
+     grid-template-rows: auto auto auto auto;   
+     margin-left:1px;
+    }
+}
 
 
 .titulo-principal-panes {
@@ -86,6 +206,11 @@
     
 }
 
+@media (min-width: 320px) and (max-width: 779px) {
+    .titulo-principal-panes{
+     font-size: 0.8rem;
+    }
+}
 .descripcion-panes {
     font-size: 0.8rem; 
     text-align: center; 
@@ -96,39 +221,63 @@
     color: rgba(0,0,0,0.87);
 }
 
+@media (min-width: 320px) and (max-width: 779px) {
+    .descripcion-panes {
+      font-size: 0.6rem; 
+      padding: 5px;
+    }
+}
+
 .precio-panes {
     text-align: center; 
     font-family: 'Roboto Slab', serif;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 320px) and (max-width: 779px) {
+    .precio-panes {
+        font-size: 0.7rem;
+    }
 }
  
 .img-panes {
-    width: 90%; 
+    width: 100%; 
     padding: 15px; 
 }
  
 .panes-general {
-    height: 500px;
-    width: 300px;
+    height: 580px;
+    width: 320px;
     border: 1px solid #412611;
     overflow: hidden;
     border-radius: 3%;
     box-shadow: 0px 1px 15px;
     transition: all 400ms ease;
+}
 
-       .panes-general:hover {
-        transform: translatey(-3%);
+.panes-general:hover {
+    transform: translatey(-3%);
+}
+
+@media (min-width: 320px) and (max-width: 779px) {
+    .panes-general {
+        height: auto;
+        width: 260px;
     }
 }
 
-
-.boton-comprar-galletas{
-    display: block;
-    margin: auto;
-    height: 40px;
-    width: 120px;
+.boton-comprar-panes{
     color:  #412611;
-    cursor: pointer;  
+    cursor: pointer; 
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.9rem;
+    border-radius: 10%;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+    .boton-comprar-panes{
+      font-size: 0.7rem;
+    }
 }
    
 
