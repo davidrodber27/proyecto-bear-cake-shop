@@ -3,11 +3,10 @@
 /* ------------------------- */
 
 .tartaletas-productos {
-    margin-top:140px; 
+    margin-top:180px;
+    margin-bottom: 120px; 
     display: grid;
-    height: 2900px;
-    margin-left: 80px;
-    margin-right: 80px;
+    height: auto;
     grid-template-areas: 
     "titulo-tartaletas titulo-tartaletas titulo-tartaletas titulo-tartaletas"
     "foto-tartaletas foto-tartaletas tarta1 tarta2"
@@ -16,9 +15,9 @@
     "tarta9 tarta10 tarta11 tarta12"
     "tarta13 tarta14 none none";
    grid-template-columns: 18% 18% 28% 28%;
-   grid-template-rows: 100px 504px 504px 504px 504px 504px;
+   grid-template-rows: 100px auto auto auto auto auto;
    grid-column-gap: 20px;
-   grid-row-gap: 20px;
+   grid-row-gap: 40px;
    justify-content: center;
 
    .titulo-tartaletas{
@@ -26,11 +25,17 @@
        background-color:#516555;
        text-align: center;
        font-size: 2rem;
-       padding-top:20px;
+       padding-top:30px;
        font-family: 'Roboto Slab', serif;
        color: #C7D7C6;
        border: 1px solid #bf743c; 
     }
+
+    @media (min-width: 320px) and (max-width: 600px) {
+        .titulo-tartaletas {
+          padding-top:10px;
+        }
+      }
    
    .foto-tartaletas {
        grid-area: foto-tartaletas;
@@ -43,81 +48,336 @@
             margin: auto;
             border-radius: 10%;
             box-shadow: 0px 1px 15px;
+            border: 1px solid #bf743c;
         }
+
+        @media (min-width: 780px) and (max-width: 1249px) {
+            .img-tartaletas-principal {
+                max-width: 80%;
+                
+            }
+        }
+
+        @media (min-width: 320px) and (max-width: 600px) {
+            .img-tartaletas-principal {
+              max-width: 90%; 
+            }
+          }
     }
    
     .tarta1{
         grid-area: tarta1;
         justify-self: center;  
+
+        #boton-cereza{
+            display: block;
+            margin:auto;
+            margin-top:2px;
+            margin-bottom: 15px;
+            height: 40px;
+            width: 120px;
+     
+            &:hover{
+              background-color: #C7D7C6;
+            } 
+        }  
     }
      
     .tarta2 {
         grid-area: tarta2;
-        justify-self: start;     
+        justify-self: center;
+        
+        #boton-cherry{
+            display: block;
+            margin:auto;
+            margin-top:2px;
+            margin-bottom: 15px;
+            height: 40px;
+            width: 120px;
+     
+            &:hover{
+                background-color: #C7D7C6;
+            } 
+        }  
     }
     
     .tarta3 {
         grid-area: tarta3;
-        justify-self: center;    
+        justify-self: center; 
+        
+        #boton-limon{
+            display: block;
+            margin:auto;
+            margin-top:2px;
+            height: 40px;
+            width: 120px;
+     
+            &:hover{
+                background-color: #C7D7C6;
+            } 
+        }  
     }
     
     .tarta4 {
         grid-area: tarta4;
-        justify-self: start;    
+        justify-self: center;
+        
+        #boton-manzana{
+            display: block;
+            margin:auto;
+            margin-top:2px;
+            margin-bottom: 15px;
+            height: 40px;
+            width: 120px;
+     
+            &:hover{
+              background-color: #C7D7C6;
+            } 
+        }  
     }
     
     .tarta5 {
         grid-area: tarta5;
-        justify-self: center;    
+        justify-self: center; 
+        
+        #boton-fresa-arandanos{
+            display: block;
+            margin:auto;
+            margin-top:2px;
+            margin-bottom: 15px;
+            height: 40px;
+            width: 120px;
+     
+            &:hover{
+                background-color: #C7D7C6;
+            } 
+        }  
     }
     
     .tarta6 {
         grid-area: tarta6;
-        justify-self: center;        
+        justify-self: center; 
+        
+        #boton-fresa{
+            display: block;
+            margin:auto;
+            margin-top:2px;
+            margin-bottom: 15px;
+            height: 40px;
+            width: 120px;
+     
+            &:hover{
+                background-color: #C7D7C6;
+            } 
+        }  
     }
     
     .tarta7{
         grid-area: tarta7;
-        justify-self: center;   
+        justify-self: center;  
+        
+        #boton-choco-velvet{
+            display: block;
+            margin:auto;
+            margin-top:2px;
+            margin-bottom: 15px;
+            height: 40px;
+            width: 120px;
+     
+            &:hover{
+                background-color: #C7D7C6;
+            } 
+        }  
     }
     
     
     .tarta8 {
        grid-area: tarta8;
-       justify-self: start;   
+       justify-self: center; 
+       
+       #boton-frutas-chocolate{
+           display: block;
+           margin:auto;
+           margin-top:2px;
+           margin-bottom: 15px;
+           height: 40px;
+           width: 120px;
+ 
+            &:hover{
+             background-color: #C7D7C6;
+            } 
+        }  
     }
     
     .tarta9 {
        grid-area: tarta9;
-       justify-self: center;   
+       justify-self: center;
+       
+       #boton-red-velvet{
+          display: block;
+          margin:auto;
+          margin-top:2px;
+          margin-bottom: 15px;
+          height: 40px;
+          width: 120px;
+ 
+          &:hover{
+              background-color: #C7D7C6;
+            } 
+        }  
     }
     
     .tarta10 {
        grid-area: tarta10;
-       justify-self: center;   
+       justify-self: center; 
+       
+       #boton-frutas{
+          display: block;
+          margin:auto;
+          margin-top:2px;
+          margin-bottom: 15px;
+          height: 40px;
+          width: 120px;
+ 
+          &:hover{
+             background-color: #C7D7C6;
+            } 
+        }  
     }
     
     .tarta11 {
        grid-area: tarta11;
-       justify-self: center;   
+       justify-self: center; 
+       
+       #boton-girasol{
+          display: block;
+          margin:auto;
+          margin-top:2px;
+          margin-bottom: 15px;
+          height: 40px;
+          width: 120px;
+ 
+          &:hover{
+              background-color: #C7D7C6;
+            } 
+        }  
     }
     
     .tarta12 {
        grid-area: tarta12;
-       justify-self: start;      
+       justify-self: center;
+       
+       #boton-magic{
+          display: block;
+          margin:auto;
+          margin-top:2px;
+          margin-bottom: 15px;
+          height: 40px;
+          width: 120px;
+ 
+          &:hover{
+              background-color: #C7D7C6;
+            } 
+        }  
     }
     
     .tarta13 {
         grid-area: tarta13;
-        justify-self: center;   
+        justify-self: center; 
+        
+        #boton-manzana-arandanos{
+          display: block;
+          margin:auto;
+          margin-top:2px;
+          margin-bottom: 15px;
+          height: 40px;
+          width: 120px;
+     
+          &:hover{
+              background-color: #C7D7C6;
+            } 
+        }  
     }
      
     .tarta14 {
         grid-area: tarta14;
-        justify-self: center;       
+        justify-self: center;
+        
+        #boton-tropical{
+            display: block;
+            margin:auto;
+            margin-top:2px;
+            margin-bottom: 15px;
+            height: 40px;
+            width: 120px;
+     
+            &:hover{
+                background-color: #C7D7C6;
+            } 
+        }  
     } 
 }
 
+@media (min-width: 1250px) and (max-width: 1800px) {
+    .tartaletas-productos {
+        grid-template-areas: 
+        "titulo-tartaletas titulo-tartaletas titulo-tartaletas titulo-tartaletas"
+        "foto-tartaletas foto-tartaletas tarta1 tarta2"
+        "foto-tartaletas foto-tartaletas tarta3 tarta4"
+        "none tarta6 tarta7 tarta8"
+        "none tarta10 tarta11 tarta12"
+        "none tarta9 tarta13 tarta14"
+        "none tarta5 tarta13 tarta14";
+        grid-template-columns:  18% 18% 28% 28%;
+        grid-template-rows: 100px auto auto auto auto auto auto;
+    }
+}
+
+@media (min-width: 780px) and (max-width: 1249px) {
+    .tartaletas-productos  {
+     grid-template-areas: 
+     "titulo-tartaletas titulo-tartaletas"
+     "foto-tartaletas foto-tartaletas" 
+     "tarta1 tarta2"
+     "tarta3 tarta4"
+     "tarta5 tarta6"
+     "tarta7 tarta8"
+     "tarta9 tarta10"
+     "tarta11 tarta12"
+     "tarta13 tarta14";
+     grid-template-columns: 50% 50%;
+     grid-template-rows: 100px auto auto auto auto auto auto auto auto;
+     grid-column-gap: 20px;    
+    }
+}
+
+@media (min-width: 320px) and (max-width: 779px) {
+    .tartaletas-productos  {
+     grid-template-areas: 
+     "titulo-tartaletas"
+     "foto-tartaletas" 
+     "tarta1" 
+     "tarta2"
+     "tarta3"
+     "tarta4"
+     "tarta5"
+     "tarta6"
+     "tarta7"
+     "tarta8"
+     "tarta9"
+     "tarta10"
+     "tarta11"
+     "tarta12"
+     "tarta13"
+     "tarta14";
+     grid-template-columns: 100%;
+     grid-template-rows: auto auto auto auto
+                         auto auto auto auto 
+                         auto auto auto auto 
+                         auto auto auto auto;   
+     margin-left:1px;
+    }
+}
 
 
 .titulo-principal-tartaletas {
@@ -128,29 +388,48 @@
     
 }
 
+@media (min-width: 320px) and (max-width: 779px) {
+    .titulo-principal-tartaletas{
+     font-size: 0.8rem;
+    }
+}
+
 .descripcion-tartaletas {
     font-size: 0.8rem; 
-    text-align: center; 
-    padding: 10px;
+    text-align: justify; 
+    margin: 10px;
     line-height: 1.5;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
     font-weight: normal;
     color: rgba(0,0,0,0.87);   
 }
 
+@media (min-width: 320px) and (max-width: 779px) {
+    .descripcion-tartaletas {
+      font-size: 0.6rem; 
+      padding: 5px;
+    }
+}
+
 .precio-tartaletas {
     text-align: center; 
-    font-size: 0.8rem; 
+    font-size: 0.9rem; 
     font-family: 'Roboto Slab', serif;
 }
 
+@media (min-width: 320px) and (max-width: 779px) {
+    .precio-tartaletas {
+        font-size: 0.7rem;
+    }
+}
+
 .img-tartaletas {
-    width: 90%; 
+    width: 100%; 
     padding: 15px; 
 }
  
 .tartaletas-general {
-    height: 500px;
+    height: 550px;
     width: 300px;
     border: 1px solid #412611;
     overflow: hidden;
@@ -158,20 +437,34 @@
     box-shadow: 0px 1px 15px;
     transition: all 400ms ease; 
 
-    .tartaletas-general:hover {
-      transform: translatey(-3%);
-    }   
+    
 }
 
-.boton-comprar-galletas{
-    display: block;
-    margin: auto;
-    height: 40px;
-    width: 120px;
-    color:  #412611;
-    cursor: pointer;  
+.tartaletas-general:hover {
+    transform: translatey(-3%);
+} 
+
+@media (min-width: 320px) and (max-width: 779px) {
+    .tartaletas-general {
+        height: auto;
+        width: 260px;
+    }
 }
-   
+
+.boton-comprar-tartaletas{
+    border: 1px solid #bf743c;
+    color:  #412611;
+    cursor: pointer; 
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.9rem;
+    border-radius: 10%;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+    .boton-comprar-tartaletas{
+      font-size: 0.7rem;
+    }
+}  
 
 
  
